@@ -25,7 +25,7 @@ SECRET_KEY = 'vm_%)iv3nip47+a2g(5lzlx_mkbmcd5lyc&pm&^(42)%3i#ra#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djreact-tnisarghu9026498.codeanyapp.com']
 
 
 # Application definition
