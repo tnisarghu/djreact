@@ -1,0 +1,9 @@
+{% if latest_learn_list %}
+    <ul>
+    {% for learn in latest_learn_list %}
+        <li><a href="{% url 'learn:detail' learn.id %}">{{ learn.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
