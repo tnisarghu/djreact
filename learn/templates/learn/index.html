@@ -1,3 +1,6 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'learn/style.css' %}">
 {% if latest_learn_list %}
     <ul>
     {% for learn in latest_learn_list %}

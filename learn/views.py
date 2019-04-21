@@ -1,11 +1,11 @@
 from django.shortcuts import get_object_or_404, render
 # Create your views here.
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 
-
+from django.utils import timezone
 from .models import Learn
 
 
@@ -14,13 +14,24 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_learn_list'
 
     def get_queryset(self):
-        """Return the last five published questions."""
-        return Learn.objects.order_by('-pub_date')[:5]
+        """
+        Return the last five published questions (not including those set to be
+        published in the future).
+        """
+        return Learn.objects.filter(
+        pub_date__lte=timezone.now()
+        ).order_by('-pub_date')[:5]
 
 
 class DetailView(generic.DetailView):
     model = Learn
     template_name = 'learn/detail.html'
+
+    def get_queryset(self):
+        """
+        Excludes any questions that aren't published yet.
+        """
+        return Learn.objects.filter(pub_date__lte=timezone.now())
 
 
 class ResultsView(generic.DetailView):
