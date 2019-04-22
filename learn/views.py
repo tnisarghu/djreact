@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404, render
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
@@ -12,7 +11,7 @@ from .models import Learn
 class IndexView(generic.ListView):
     template_name = 'learn/index.html'
     context_object_name = 'latest_learn_list'
-
+	latest_subject_list = ["Anatomy", "Physiology", "Bioochemistry"]
     def get_queryset(self):
         """
         Return the last five published questions (not including those set to be
@@ -35,8 +34,8 @@ class DetailView(generic.DetailView):
 
 
 class ResultsView(generic.DetailView):
-    model = Learn
-    template_name = 'learn/results.html'
+    latest_subject_list = ["Anatomy", "Physiology", "Bioochemistry"]
+    template_name = 'learn/base.html'
 
 def vote(request, learn_id):
     return HttpResponse("You're voting on question %s." % learn_id)
