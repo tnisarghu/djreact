@@ -25,7 +25,7 @@ SECRET_KEY = 'vm_%)iv3nip47+a2g(5lzlx_mkbmcd5lyc&pm&^(42)%3i#ra#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djreact-tnisarghu9026498.codeanyapp.com']
+ALLOWED_HOSTS = ['djreact-tnisarghu9026498.codeanyapp.com','127.0.0.1']
 
 
 # Application definition
@@ -37,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'medlearn.apps.MedlearnConfig',
     'learn',
     'books',
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
