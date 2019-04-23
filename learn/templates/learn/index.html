@@ -1,23 +1,17 @@
 ﻿<!-- extends base.html and add block content only in base.html -->
-{% extends 'base.html' %}
+{% extends 'learn/base.html' %}
 <!-- start block content which will be added to base.html and give us new file named index.html -->
 {% block content %}
 
-<h1>{{ request.user }}</h1>
-{% if latest_learn_list %}
-    <ul>
-    {% for learn in latest_learn_list %}
-        <li><a href="{% url 'learn:detail' learn.id %}">{{ learn.name }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No learns are available.</p>
-{% endif %}
-
-{% for a in blog_list %}
-    {% include 'blog/list-inline.html' with blog_post=a truncate=True detail=False %}
-{% endfor %}
-
-
+    <h1>{{ request.user }}</h1>
+    {% if latest_learn_list %}
+        <ul>
+        {% for learn in latest_learn_list %}
+            <li><a href="{% url 'learn:detail' learn.id %}">{{ learn.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No learns are available.</p>
+    {% endif %}
 
 {% endblock %}
