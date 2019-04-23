@@ -11,7 +11,6 @@ from .models import Learn
 class IndexView(generic.ListView):
     template_name = 'learn/index.html'
     context_object_name = 'latest_learn_list'
-	latest_subject_list = ["Anatomy", "Physiology", "Bioochemistry"]
     def get_queryset(self):
         """
         Return the last five published questions (not including those set to be
@@ -33,8 +32,8 @@ class DetailView(generic.DetailView):
         return Learn.objects.filter(pub_date__lte=timezone.now())
 
 
-class ResultsView(generic.DetailView):
-    latest_subject_list = ["Anatomy", "Physiology", "Bioochemistry"]
+class BaseView(generic.DetailView):
+    model = Learn
     template_name = 'learn/base.html'
 
 def vote(request, learn_id):

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'medlearn.apps.MedlearnConfig',
     'learn',
+    'books',
     'rest_framework'
 ]
 
