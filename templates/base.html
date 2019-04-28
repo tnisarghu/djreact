@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" >
+    <meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- title -->
+    <title>Medlearn</title>
+	<!-- stylesheets -->
+    <!-- load css local app by style block -->
+    {% block style %}
+         {% endblock %}
+	<!-- css -->
+    <link rel="stylesheet" href="{% static "main.css" %}">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- scripts -->
+	<script src="{% static "jquery-3.4.0.js" %}"></script>
+
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+
+  <!-- Angular Material style sheet -->
+
+</head>
+<body>
+  <!--
+    Your HTML content here
+  -->
+    <!-- include navbar -->
+  {% include 'navbar.html' %}
+    <div class='container-fluid'>
+         {% block content %}
+         {% endblock %}
+    </div>
+
+  <!-- load app specific js using javascript block -->
+  {% block javascript %}
+         {% endblock %}
+  <!-- js -->
+  <script src="{% static "main.js" %}"></script>
+  <!-- popper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!-- Angular Material requires Angular.js Libraries
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script> -->
+
+  <!-- Angular Material Library
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script> -->
+  <!-- Your application bootstrap  -->
+
+</body>
+</html>
