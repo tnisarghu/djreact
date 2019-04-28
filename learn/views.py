@@ -3,25 +3,24 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils import timezone
-from .models import Learn
+from .models import Learn, LearnName
 
 
-class IndexView(generic.ListView):
+class IndexView(LoginRequiredMixin, generic.ListView):
     template_name = 'learn/index.html'
     context_object_name = 'latest_learn_list'
+
     def get_queryset(self):
         """
         Return the last five published questions (not including those set to be
         published in the future).
         """
-        return Learn.objects.filter(
-        pub_date__lte=timezone.now()
-        ).order_by('-pub_date')[:5]
+        return Learn.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class DetailView(LoginRequiredMixin, generic.DetailView):
     model = Learn
     template_name = 'learn/detail.html'
 
@@ -34,7 +33,17 @@ class DetailView(generic.DetailView):
 
 class BaseView(generic.DetailView):
     model = Learn
-    template_name = 'learn/base.html'
+    template_name = 'base.html'
 
 def vote(request, learn_id):
     return HttpResponse("You're voting on question %s." % learn_id)
+'''class Library(generic.DetailView):
+	model = LearnName
+    template_name = 'learn/library.html'
+	
+	def get_queryset(self):
+        """
+        Return the last five published questions (not including those set to be
+        published in the future).
+        """
+        return LearnName.objects.filter(pub_date__lte=timezone.now()) '''

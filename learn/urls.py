@@ -9,4 +9,5 @@ urlpatterns = [
     path('<int:pk>/base/', views.BaseView.as_view(), name='base'),
     # ex: /polls/5/vote/
     path('<int:learn_id>/vote/', views.vote, name='vote'),
+	# path('<int:learn_id>/library/', views.Library.as_view(), name='index'),
 ]

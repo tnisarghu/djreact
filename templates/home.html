@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+
+{% for a in books_list %}
+    {% include 'books/list-inline.html' with books_post=a truncate=True detail=False %}
+{% endfor %}
+
+
+
+{% endblock %}

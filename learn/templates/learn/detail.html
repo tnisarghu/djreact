@@ -1,8 +1,29 @@
-{% extends 'learn/base.html' %}
+{% extends 'base.html' %}
+{% block style %}
+
+  <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    {% endblock %}
 {% block content %}
 <h1>{{ learn.name }}</h1>
-<video class="video" id="video" controls>
-    <source src="{{ learn.contentUrl }}" type="video/mp4"></video>
+ <video id="my_video" class="video-js vjs-default-skin" width="740px" height="360px"
+      controls preload="none"
+  poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+    <source src="{{ learn.contentUrl }}" type="video/mp4">
+    <p class='vjs-no-js'>
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+    </p>
+</video>
 <p>{{ learn.description }}</p>
 <p>{{ learn.contentUrl}}</p>
 {% endblock %}
+<!--video js -->
+{% block javascript %}
+ <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src="//path/to/videojs-select-subtitle.min.js"></script>
+  <script>
+  var player = videojs('my-video');
+  player.selectSubtitle();
+</script>
+         {% endblock %}

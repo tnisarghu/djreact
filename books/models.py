@@ -49,6 +49,7 @@ class Books(models.Model):
     updated = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User, default=1, null=True, on_delete=models.SET_NULL)
     image = models.ImageField(upload_to='image/', blank=True, null=True)
+    slug = models.SlugField(unique=True)  # hello world -> hello-world
 
     objects = BookManager()
 
@@ -56,7 +57,7 @@ class Books(models.Model):
         ordering = ['-publish_date', '-updated', '-timestamp']
 
     def get_absolute_url(self):
-        return f"/blog/{self.slug}"
+        return f"/books/{self.slug}"
 
     def get_edit_url(self):
         return f"{self.get_absolute_url()}/edit"
