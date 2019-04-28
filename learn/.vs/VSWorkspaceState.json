@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\migrations\\__pycache__",
+    "\\static\\learn",
+    "\\templates",
+    "\\templates\\css",
+    "\\templates\\js",
+    "\\templates\\learn"
+  ],
+  "SelectedNode": "\\tests.py",
+  "PreviewInSolutionExplorer": false
+}

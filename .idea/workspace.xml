@@ -2,80 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edee61b4-b2b4-4be6-ae9c-1d93022e6969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/list-inline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/templates/search/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery-3.4.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/3rd-042019084807.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/common-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/landing-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/landing-042019084807.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/landing-global-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/landing-global-042019084807.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/landing-shared-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/learnLanding-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/loginLanding-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/main-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/video-042019084807.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/video-042019084807.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/www-042119032500.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/static/learn/www-042119032500.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/angular-material.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/common-032219085407.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/main-032219085407.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/video-032219085407.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/css/www-032219085407.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/3rd-031919072544.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/3rd-032119071735.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/3rd-032219085407.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/angular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/video-032219085407.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/www-031919072544.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/js/www-032219085407.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/learn/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/learn/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn/templates/learn/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/learn/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn/templates/learn/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/learn/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.7-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.7.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.7.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe.manifest" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +136,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561" />
+            <state relative-caret-position="-526" />
           </provider>
         </entry>
       </file>
@@ -398,6 +325,11 @@
             <path>
               <item name="medlearntry" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medlearntry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -446,7 +378,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: learn.tests.LearnIndexViewTests.test_future_learn">
+  <component name="RunManager" selected="Docker.djreact">
     <configuration name="Test: learn.tests.LearnIndexViewTests.test_future_learn" type="DjangoTestsConfigurationType" temporary="true">
       <module name="medlearntry" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -491,6 +423,18 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="djreact" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="command" value="" />
+          <option name="containerName" value="djreact" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="169" />
+          <option name="commandLineOptions" value="" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Django tests.Test: learn.tests.LearnIndexViewTests.test_future_learn" />
@@ -515,7 +459,7 @@
       <workItem from="1556329353384" duration="91000" />
       <workItem from="1556335927269" duration="7134000" />
       <workItem from="1556345628241" duration="11643000" />
-      <workItem from="1556418288596" duration="4916000" />
+      <workItem from="1556418288596" duration="6103000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1555853298368</created>
@@ -531,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556005513031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change0">
+      <created>1556423820458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556423820458</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -543,14 +494,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74849000" />
+    <option name="totallyTimeSpent" value="76036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49761903" weight="0.27781984" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49761903" visible="true" weight="0.27781984" />
       <window_info id="Structure" order="2" sideWeight="0.50238097" side_tool="true" weight="0.24905375" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3290735" />
       <window_info anchor="bottom" id="Run Dashboard" order="1" weight="0.3290735" />
@@ -602,10 +552,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="codeneter" />
-    <option name="LAST_COMMIT_MESSAGE" value="codeneter" />
+    <MESSAGE value="change0" />
+    <option name="LAST_COMMIT_MESSAGE" value="change0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -919,7 +896,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
+        <state relative-caret-position="-526" />
       </provider>
     </entry>
   </component>

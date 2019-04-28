@@ -1,0 +1,27 @@
+ <div class='col-12 col-md-10 mb-3 mx-auto'>
+ <div class='card {% if not books_post.publish_date %} border border-warning text-dark {% endif %}'>
+    <div class='card-body'>
+        {% if books_post.image %}
+            <a href="{{ books_post.get_absolute_url }}">
+                    <img src="{{ books_post.image.url }}" class='card-img-top' />
+            </a>
+        {% endif %}
+        <h5 class='card-title'>{{ books_post.title }}</h5>
+        <p class='card-text'>
+            <small class='text-muted'>{{ books_post.publish_date }}</small>
+            {% if truncate %}
+                {{ books_post.content|linebreaks|truncatewords:30 }}
+            {% else %}
+                {{ books_post.content|linebreaks }}
+            {% endif %}
+        </p>
+
+        {% if not detail %}
+            {% if not books_post.publish_date %} Draft {% endif %}
+            <a href="{{ books_post.get_absolute_url }}">View</a>
+
+        {% endif %}
+    </div>
+
+ </div>
+</div>
