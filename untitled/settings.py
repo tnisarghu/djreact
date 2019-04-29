@@ -25,7 +25,7 @@ SECRET_KEY = 'vm_%)iv3nip47+a2g(5lzlx_mkbmcd5lyc&pm&^(42)%3i#ra#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djreact-tnisarghu9026498.codeanyapp.com','127.0.0.1']
+ALLOWED_HOSTS = [u'ninque.pythonanywhere.com']
 
 
 # Application definition
@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',  # Core authentication framework and its default models.
     'django.contrib.contenttypes',  # Manages sessions across requests
-    'django.contrib.sessions', 
+    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',  # maybe for static files
     # added by me
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware', 
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',  #Manages sessions across requests
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
