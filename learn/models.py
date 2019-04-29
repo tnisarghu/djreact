@@ -3,10 +3,12 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
+
+
 class Learn(models.Model):
     name = models.CharField(max_length=30)
-    description = models.TextField()
-    contentUrl = models.URLField()
+    description = models.TextField(null='True', blank='True')
+    contentUrl = models.URLField(null='True', blank='True')
     pub_date = models.DateTimeField('date published')
 
     def __str__(self): # usefull to see Learn.name in admin site
@@ -16,11 +18,14 @@ class Learn(models.Model):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
-		
+
 class LearnName(models.Model):
-	name = models.ForeignKey(Learn, on_delete=models.CASCADE)
-	subject = models.CharField(max_length=20)
-	main_topic = models.CharField(max_length=45)
-	sub_topic = models.CharField(max_length=45)
-	pub_date = models.DateTimeField('date published')
-	timestamp = models.DateTimeField(auto_now_add=True)
+    """
+    This class is for making library and associating learn with subjects
+    """
+    name = models.ForeignKey(Learn, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=20, null='True', blank='True')
+    main_topic = models.CharField(max_length=45, null='True', blank='True')
+    sub_topic = models.CharField(max_length=45, null='True', blank='True')
+    pub_date = models.DateTimeField('date published')
+    timestamp = models.DateTimeField(auto_now_add=True)
