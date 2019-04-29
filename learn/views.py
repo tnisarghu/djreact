@@ -43,15 +43,16 @@ def vote(request, learn_id):
 """  class Library(generic.DetailView):
 	model = LearnName
     template_name = 'learn/library.html'
-	
+
 	def get_queryset(self):
 
-        return LearnName.objects.filter(pub_date__lte=timezone.now()) 
+        return LearnName.objects.filter(pub_date__lte=timezone.now())
         """
 
 
 def library(request):
-    obj = get_object_or_404(LearnName)
+    obj = LearnName.objects.all()
     template_name = 'learn/library.html'
-    context = {"title": obj.name, "subject": obj.subject, "main_topic": obj.main_topic, "sub_topic": obj.sub_topic}
+    # context = {"title": [obj.name], "subject": [obj.subject], "main_topic": [obj.main_topic], "sub_topic": [obj.sub_topic]
+    context = {'obj': obj}
     return render(request, template_name, context)
