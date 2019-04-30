@@ -24,14 +24,9 @@ class LearnName(models.Model):
     This class is for making library and associating learn with subjects
     """
     name = models.ForeignKey(Learn, on_delete=models.CASCADE)
-<<<<<<< HEAD
     subject = models.CharField(max_length=25, null='True', blank='True')
-    system = models.CharField(max_length=35, null='True', blank='True')
-=======
-    subject = models.CharField(max_length=35, null='True', blank='True')
->>>>>>> 45da3fe083db30b75b79825ef3be56f982083942
+    system = models.CharField(max_length=45, null='True', blank='True')
     main_topic = models.CharField(max_length=45, null='True', blank='True')
     sub_topic = models.CharField(max_length=45, null='True', blank='True')
     pub_date = models.DateTimeField('date published')
     timestamp = models.DateTimeField(auto_now_add=True)
-    system = models.CharField(max_length=45, null='True', blank='True')
