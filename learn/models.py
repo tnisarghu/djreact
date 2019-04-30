@@ -6,7 +6,7 @@ from django.utils import timezone
 
 
 class Learn(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=40)
     description = models.TextField(null='True', blank='True')
     contentUrl = models.URLField(null='True', blank='True')
     pub_date = models.DateTimeField('date published')
@@ -24,8 +24,9 @@ class LearnName(models.Model):
     This class is for making library and associating learn with subjects
     """
     name = models.ForeignKey(Learn, on_delete=models.CASCADE)
-    subject = models.CharField(max_length=20, null='True', blank='True')
+    subject = models.CharField(max_length=35, null='True', blank='True')
     main_topic = models.CharField(max_length=45, null='True', blank='True')
     sub_topic = models.CharField(max_length=45, null='True', blank='True')
     pub_date = models.DateTimeField('date published')
     timestamp = models.DateTimeField(auto_now_add=True)
+    system = models.CharField(max_length=45, null='True', blank='True')
