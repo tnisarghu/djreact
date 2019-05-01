@@ -9,13 +9,12 @@ class LearnInline(admin.TabularInline):
 
 class LearnAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['name']}),
+        (None,               {'fields': ['name', 'description', 'contentUrl']}),
         ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),]
     inlines = [LearnInline]
     list_display = ('name', 'pub_date')
     ordering = ['pub_date']
     search_fields = ['name']
-    autocomplete_fields = ['name']
 
 
 class LearnNameAdmin(admin.ModelAdmin):
