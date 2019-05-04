@@ -19,7 +19,7 @@ from django.contrib import admin
 
 from django.urls import path, re_path, include # url
 from .routers import router
-from search.views import search_view
+from search.views import (search_view, learn_view)
 from books.views import (
     books_post_create_view,
 )
@@ -39,6 +39,7 @@ urlpatterns = [
     path('learn/', include('learn.urls')),
     path('books/', include('books.urls')),
     path('search/', search_view),
+    path('search2/', learn_view),
     path('books-new/', books_post_create_view),
     path('page/', about_page),
     path('pages/', about_page),

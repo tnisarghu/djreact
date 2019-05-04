@@ -1,0 +1,216 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.839 --> 00:00:09.970
+Minimal-change disease, sometimes called nil
+disease, affects the millions of the kidney’s
+
+00:00:09.970 --> 00:00:13.890
+glomeruli, which are the specific parts of
+the kidney where small molecules are first
+
+00:00:13.890 --> 00:00:15.920
+filtered out of blood and into the urine.
+
+00:00:15.920 --> 00:00:21.220
+Specifically, it’s a type of nephrotic syndrome,
+in fact, the most common nephrotic syndrome
+
+00:00:21.220 --> 00:00:22.690
+seen in children.
+
+00:00:22.690 --> 00:00:26.030
+But what exactly is nephrotic syndrome?
+
+00:00:26.030 --> 00:00:30.880
+Well usually the glomerulus only lets small
+molecules—like sodium and water—move from
+
+00:00:30.880 --> 00:00:35.510
+the blood into the kidney nephron where it
+eventually make its way into the urine.
+
+00:00:35.510 --> 00:00:40.550
+But with nephrotic syndromes, the glomeruli
+are damaged and they become more permeable,
+
+00:00:40.550 --> 00:00:45.010
+so they start letting plasma proteins come
+across from the blood to the nephron and then
+
+00:00:45.010 --> 00:00:52.080
+into the urine, which causes proteinuria—typically
+greater than 3.5 grams per day.
+
+00:00:52.080 --> 00:00:56.559
+An important protein in the blood is albumin,
+and so when it starts leaving the blood, people
+
+00:00:56.559 --> 00:01:01.940
+get hypoalbuminemia—low albumin in the blood.
+
+00:01:01.940 --> 00:01:07.229
+With less protein in the blood the oncotic
+pressure falls, which lowers the overall osmotic
+
+00:01:07.229 --> 00:01:12.509
+pressure, which drives water out of the blood
+vessels and into the tissues, called edema.
+
+00:01:12.509 --> 00:01:17.609
+Finally, it’s thought that as a result of
+either losing albumin or losing some protein
+
+00:01:17.609 --> 00:01:23.340
+or proteins that inhibit the synthesis of
+lipids—or fat—you get increased levels
+
+00:01:23.340 --> 00:01:27.130
+of lipids in the blood, called hyperlipidemia.
+
+00:01:27.130 --> 00:01:32.710
+Just like the proteins, these lipids can also
+get into the urine, causing lipiduria.
+
+00:01:32.710 --> 00:01:40.679
+And those are the hallmarks of nephrotic syndrome—proteinuria,
+hypoalbuminemia, edema, hyperlipidemia, and
+
+00:01:40.679 --> 00:01:42.069
+lipiduria.
+
+00:01:42.069 --> 00:01:47.959
+Okay, so minimal change disease is a type
+of nephrotic syndrome—got it, but how exactly
+
+00:01:47.959 --> 00:01:52.090
+do those glomeruli start letting plasma proteins
+like albumin through?
+
+00:01:52.090 --> 00:01:58.390
+Well, usually, in the glomerulus, you’ve
+got your endothelial cells lining the capillaries,
+
+00:01:58.390 --> 00:02:03.389
+then the basement membrane, and then the podocytes,
+which are the cells that have these long tentacle-like
+
+00:02:03.389 --> 00:02:08.390
+projections, called foot processes, and this
+is also why they’re called podocytes since
+
+00:02:08.390 --> 00:02:10.520
+podo refers to the foot.
+
+00:02:10.520 --> 00:02:16.989
+The foot processes have a negatively charged
+coat that helps repel negatively charged molecules—like
+
+00:02:16.989 --> 00:02:21.129
+albumin, thereby acting as a charge barrier.
+
+00:02:21.129 --> 00:02:24.819
+With minimal change disease, although not
+completely known, it’s thought that the
+
+00:02:24.819 --> 00:02:29.680
+T cells in the blood release cytokines that
+specifically damages the foot processes of
+
+00:02:29.680 --> 00:02:35.239
+the podocytes, making them flatten out, a
+process called effacement.
+
+00:02:35.239 --> 00:02:37.989
+This means that there’s less of a charge
+barrier, right?
+
+00:02:37.989 --> 00:02:41.900
+And albumin is allowed to slip through from
+the blood into the nephron.
+
+00:02:41.900 --> 00:02:47.290
+Even though albumin goes through, other larger
+proteins like immunoglobulin aren’t allowed
+
+00:02:47.290 --> 00:02:52.439
+through, and so with minimal change disease
+there’s selective proteinuria.
+
+00:02:52.439 --> 00:02:57.989
+The exact identity and mechanism of these
+ominous T-cell cytokines, though, still remains
+
+00:02:57.989 --> 00:03:00.310
+a mystery.
+
+00:03:00.310 --> 00:03:05.760
+As far as causes of minimal change goes, in
+most cases it’s idiopathic, meaning the
+
+00:03:05.760 --> 00:03:10.859
+cause is unknown, although one interesting
+clue is that it’s associated with Hodgkin’s
+
+00:03:10.859 --> 00:03:16.780
+lymphoma, possibly because of the general
+increase in cytokine production in that disease.
+
+00:03:16.780 --> 00:03:20.409
+For diagnosis, minimal-change disease can
+be kind of tricky.
+
+00:03:20.409 --> 00:03:25.920
+With only light microscopy and H&amp;E stain,
+you can’t see the foot process effacement,
+
+00:03:25.920 --> 00:03:30.620
+so it seems as if there’s no change to the
+glomerulus, hence the names “minimal-change”
+
+00:03:30.620 --> 00:03:32.639
+and “nil” disease.
+
+00:03:32.639 --> 00:03:37.659
+With electron microscopy, though, you can
+see effacement of foot processes.
+
+00:03:37.659 --> 00:03:42.969
+Also, immunofluorescence with minimal-change
+disease is usually negative, since the damage
+
+00:03:42.969 --> 00:03:47.319
+is due to cytokines, not immune-complex deposition.
+
+00:03:47.319 --> 00:03:52.260
+Treatment of minimal-change disease is typically
+corticosteroid therapy, of which about 90%
+
+00:03:52.260 --> 00:03:54.849
+of children respond very well.
+
+00:03:54.849 --> 00:04:01.060
+Adults also respond well to corticosteroid
+therapy, but their response is generally slower.
+
+00:04:01.060 --> 00:04:04.040
+In both cases, though, there’s a potential
+for relapse.
+
+00:04:04.040 --> 00:04:09.599
+Alright, so as a short recap, minimal change
+disease is a nephrotic syndrome thought to
+
+00:04:09.599 --> 00:04:17.579
+be caused by cytokine damage to the foot processes
+of the podocytes in the glomeruli of the kidney.
+
+00:04:17.579 --> 00:04:23.720
+Thanks for watching, you can help support
+us by donating on patreon, or subscribing
+
+00:04:23.720 --> 00:04:26.349
+to our channel, or telling your friends about
+us on social media.
+

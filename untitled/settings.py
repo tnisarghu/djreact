@@ -11,7 +11,14 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+'''# Add sentry just for try
+import sentry_sdk         #  sentry not worked seee evernote 3/05/2019
+from sentry_sdk.integrations.django import DjangoIntegration
 
+sentry_sdk.init(
+    dsn="https://cd3be8554fd741db87208d3eeb0aa982@sentry.io/1452034",
+    integrations=[DjangoIntegration()]
+) '''
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,8 +31,7 @@ SECRET_KEY = 'vm_%)iv3nip47+a2g(5lzlx_mkbmcd5lyc&pm&^(42)%3i#ra#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = [u'ninque.pythonanywhere.com']
+ALLOWED_HOSTS = [u'ninque.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -33,20 +39,38 @@ ALLOWED_HOSTS = [u'ninque.pythonanywhere.com']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',  # Core authentication framework and its default models.
-    'django.contrib.contenttypes',  # Manages sessions across requests
-    'django.contrib.sessions',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',  # Manages sessions across requests
     'django.contrib.messages',
     'django.contrib.staticfiles',  # maybe for static files
     # added by me
+	# 'debug_toolbar.middleware.DebugToolbarMiddleware', # debug toolbar run using .I don't use
+	                                                   # python manage.py debugsqlshell
     'django.contrib.admindocs',  # to activate admindocs path admin/doc/ (needs docutils python module)
     'rest_framework',  # provides api for frontend app currently only made fro learn specifically only Learn class
     # add custom build apps
     'learn',  # this app basically build to provide video and short description of each topics
     'books',  # app for makin searchable books to easily search anything in medical books
-    'search'  # currently only search in books very basic search
+    'search',  # currently only search in books very basic 
+	# third party apps
+	'algoliasearch_django',  # adding algolia search
 ]
-
+'''
+Settings for debug toolbar here
+DEBUG_TOOLBAR_PANELS = (
+    'debug_toolbar.panels.version.VersionDebugPanel',
+    'debug_toolbar.panels.timer.TimerDebugPanel',
+    'debug_toolbar.panels.settings_vars.SettingsVarsDebugPanel',
+    'debug_toolbar.panels.headers.HeaderDebugPanel',
+    'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
+    'debug_toolbar.panels.template.TemplateDebugPanel',
+    'debug_toolbar.panels.sql.SQLDebugPanel',
+    'debug_toolbar.panels.signals.SignalDebugPanel',
+    'debug_toolbar.panels.logger.LoggingPanel',
+)
+'''
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',  #Manages sessions across requests
     'django.middleware.common.CommonMiddleware',
@@ -54,10 +78,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware', #Associates users with requests using sessions.
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	#  Added by me
+	# 'viewas.middleware.ViewAsMiddleware', # superuser can view as any user by username refer django-view-as github(fork)
 ]
 
 ROOT_URLCONF = 'untitled.urls'
-
+#  django templatings
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -70,11 +96,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # installed by me
+                # 'django.core.context_processors.request', # used for sentry not in use
             ],
         },
     },
 ]
-
+# django using python wsgi sever to serve content
 WSGI_APPLICATION = 'untitled.wsgi.application'
 
 
@@ -107,13 +135,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Adding algolia 
+ALGOLIA = {
+    'APPLICATION_ID': 'NBRF73Q7TQ',
+    'API_KEY': 'dc57cb29faff5db639b400476955e58c'
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -138,5 +171,6 @@ MEDIA_ROOT = os.path.join(LOCAL_STATIC_CDN_PATH, 'media')
 MEDIA_URL = '/media/' # django-storages
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/learn/'
+LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

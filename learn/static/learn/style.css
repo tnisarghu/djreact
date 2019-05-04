@@ -1,3 +1,25 @@
-li a {
-    color: green;
+body {
+    background: #fff;
+    font-family: "Nunito",'Open Sans',sans-serif;
+    font-weight: 400;
+    margin: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+div {
+    display: block;
+}
+.description{
+	display:flex;
+	background: white;
+	margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1190px;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+	box-sizing: border-box;
+	border: 2px solid #1C95BA;
 }

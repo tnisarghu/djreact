@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils import timezone
-from .models import Learn, LearnName
+from .models import Learn
 
 
 class IndexView(LoginRequiredMixin, generic.ListView):
@@ -20,7 +20,7 @@ class IndexView(LoginRequiredMixin, generic.ListView):
         Return the last five published questions (not including those set to be
         published in the future).
         """
-        return Learn.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
+        return Learn.objects.all()
 
 
 class DetailView(LoginRequiredMixin, generic.DetailView):
@@ -31,7 +31,7 @@ class DetailView(LoginRequiredMixin, generic.DetailView):
         """
         Excludes any questions that aren't published yet.
         """
-        return Learn.objects.filter(pub_date__lte=timezone.now())
+        return Learn.objects.all()
 
 
 class BaseView(generic.DetailView):
@@ -51,7 +51,7 @@ def vote(request, learn_id):
 
 
 def library(request):
-    obj = LearnName.objects.all()
+    obj = Learn.objects.all()
     template_name = 'learn/library.html'
     # context = {"title": [obj.name], "subject": [obj.subject], "main_topic": [obj.main_topic], "sub_topic": [obj.sub_topic]
     context = {'obj': obj}

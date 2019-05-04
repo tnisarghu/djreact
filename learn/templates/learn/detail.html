@@ -1,26 +1,30 @@
 {% extends 'base.html' %}
-{% block style %}
+{% load static %}
 
+{% block style %}
+	<link rel="stylesheet" href="{% static "learn/style.css" %}">
   <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
     {% endblock %}
 {% block content %}
 <h1>{{ learn.name }}</h1>
- <video id="my_video" class="video-js vjs-default-skin" width="740px" height="360px"
-      controls preload="none"
-  poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+ <video  id='my-video' class='video-js' width='720' height='360'  controls preload="none"
+  poster='https://osmose-it.s3.amazonaws.com/AUn_JMb4QjKkknHoFbaatxd4Skal2Ori/_.jpg' data-setup='{}'>
     <source src="{{ learn.contentUrl }}" type="video/mp4">
+	<track kind="captions" src="{% static "learn/1BY7_U1HT5u7NecDzncurmT3TMKx1n3W.vtt" %}" srclang="en" label="english" default>
     <p class='vjs-no-js'>
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
     </p>
+	
 </video>
+<div class="container description">
 <p>{{ learn.description }}</p>
-<p>{{ learn.contentUrl}}</p>
+</div>
 {% endblock %}
 <!--video js -->
 {% block javascript %}
  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
   <script src="//path/to/videojs-select-subtitle.min.js"></script>
   <script>
   var player = videojs('my-video');

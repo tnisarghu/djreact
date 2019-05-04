@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import Books
+from .models import Books, BookManager, BooksQuerySet
 
 # Register your models here.
+
+
 class BooksAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,               {'fields': ['title', 'chapter', 'sub_chapter', 'topics', 'content']}),
